@@ -5,6 +5,8 @@ WARNING: Tested only on Dell Vostro 5590! For other models you may need to chang
 
 WARNING: This is an Opencore EFI folder so it wont work with Clover! Booting on those laptops using Clover is quite impossible for now.
 
+macOS Version: Catalina 10.15.4
+
 Tested configuration:
 Dell Vostro 5590
 - i5 10210U
