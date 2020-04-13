@@ -25,13 +25,13 @@ What works:
 - LAN
 - Battery indication
 - Keyboard
+- Brightness regulation
+- Sleep/Wake/Instant On
 
 Not working (this is only for now):
 - WiFi (it may be supported soon, a new AppleIntelWifi.kext is under work)
 - Sound (still trying to figure out which layouts or patches are needed)
 - Trackpad (it works as an emulated mouse so no gestures)
-- Sleep
-- Brightness regulation
 - Mic and camera (didn't even try to fix them, mic wont work with AppleALC)
 - Bluetooth
 
