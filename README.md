@@ -1,5 +1,5 @@
 # Hackintosh-DellVostro5590-EFI
-EFI for Dell Vostro 5490/5590 and possibly works on Inspiron 5490/5498/5590/5598 models
+EFI for Dell Vostro 5490/5590
 
 WARNING: Tested only on Dell Vostro 5590! For other models you may need to change some things (for example gpu device-id and ig-platform or SMBIOS). It's recommended to update bios to the latest version. There are still a few things to fix as the sound is the biggest problem.
 
