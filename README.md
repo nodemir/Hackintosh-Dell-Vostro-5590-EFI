@@ -35,4 +35,5 @@ Not working (this is only for now):
 - Mic and camera (didn't even try to fix them, mic wont work with AppleALC)
 - Bluetooth
 
+As far as used the laptop I can tell it's a very good hackbook. It's fast and is working very stable with the last fixes.
 I am still working on this EFI so I will update it as soon as I have any progress on it.
