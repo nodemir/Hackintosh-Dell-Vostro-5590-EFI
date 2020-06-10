@@ -4,7 +4,7 @@
 Tested on Dell Vostro 5590. It's recommended to update BIOS to the latest versions. I will update this repository regularly with new fixes and updated versions of OpenCore and kexts.
 
 <details>
-<summary>## Update log</summary>
+<summary>Update log</summary>
 <br>
   - 13 Apr 2020 - fixed power management and trackpad
 <br>
@@ -30,20 +30,22 @@ Goodix fingerprint sensor
 ```
 
 ### Important BIOS settings
+```sh
 My current BIOS version is 1.6.0
 I recommend you to restore the default BIOS settings before proceeding
-| UEFI Boot Path Security - Never |
-| Integrated NIC - Enabled |
-| SATA Operation - AHCI |
-| USB Configuration - Enable USB Boot Support must be checked |
-| Disable EcoPower (Optional) |
-| Absolute - Disable Absolute |
-| TPM 2.0 Security On - OFF |
-| Intel SGX - Disabled |
-| Enable Secure Boot - OFF |
-| Secure Boot Mode - Deployed Mode |
-| Intel Virtualization Technology - ON |
-| VT for Direct I/O - OFF |
+UEFI Boot Path Security - Never
+Integrated NIC - Enabled
+SATA Operation - AHCI
+USB Configuration - Enable USB Boot Support must be checked
+Disable EcoPower (Optional)
+Absolute - Disable Absolute
+TPM 2.0 Security On - OFF
+Intel SGX - Disabled
+Enable Secure Boot - OFF
+Secure Boot Mode - Deployed Mode
+Intel Virtualization Technology - ON
+VT for Direct I/O - OFF
+```
 
 ### Working
 ```sh
@@ -73,8 +75,9 @@ I recommend you to restore the default BIOS settings before proceeding
 - Fn keys for brightness
 - Fingerprint sensor (Goodix fingerprint sensor are not supported by macOS)
 ```
-~ To fix trackpad click working only on pressing, go to preferences -> trackpad -> point and click -> enable tap to click and silent click.
-~ Keep in mind that you will need to fix some things such as iServices manually.
+To fix trackpad click working only on pressing, go to preferences -> trackpad -> point and click -> enable tap to click and silent click.
+
+Keep in mind that you will need to fix some things such as iServices manually.
 
 ### Benchmarks (Geekbench)
 CPU:
