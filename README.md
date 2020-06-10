@@ -1,44 +1,88 @@
 # Hackintosh-DellVostro5590-EFI
-EFI for Dell Vostro 5490/5590
+##EFI for Dell Vostro 5490/5590
 
-WARNING: Tested only on Dell Vostro 5590! For other models you may need to change some things (for example gpu device-id and ig-platform or SMBIOS). It's recommended to update bios to the latest version. There are still a few things to fix as the sound is the biggest issue for now.
+Tested on Dell Vostro 5590. It's recommended to update BIOS to the latest versions. I will update this repository regularly with new fixes and updated versions of OpenCore and kexts.
 
-Update log:
-- 22.05.2020 - updated kexts and OpenCore to the latest version 0.5.8, fixed some issues
+<details>
+<summary>##Update log</summary>
+<br>
+  - 13 Apr 2020 - fixed power management and trackpad
+  - 22 May 2020 - updated kexts and OpenCore to version 0.5.8, fixed some minor issues
+  - 10 Jun 2020 - fixed the no audio issue, updated kexts and OpenCore to version 0.5.9, changed SMBIOS to MacBookPro15,4
+</details>
 
+macOS Version: Catalina 10.15.5
 
-macOS Version: Catalina 10.15.4
-It wont work on any older macOS version since 10.15.4 is the first to support intel's 10th generation processors.
-
-Tested configuration:
+###Laptop specs
 Dell Vostro 5590
-- i5 10210U
-- UHD 620
-- 12GB RAM
-- Intel WiFi 9462
-- Realtek ALC 3204/236
-- 250GB SK Hynix SSD
-- HID Touchpad device
+```sh
+i5 10210U
+UHD 620
+12GB RAM
+Intel WiFi 9462
+Realtek ALC 3204/236
+250GB SK Hynix SSD
+HID Touchpad device
+Standart PS2 keyboard
+```
 
-What works:
-- Booting/Shutdown/Restart
-- Speed Step
-- Graphics
-- All USB-A ports (mapped) [USB-C not tested]
-- LAN
-- Battery indication/status
-- Keyboard
-- Brightness regulation
-- Sleep/Wake/Instant On
-- Touchpad
-- NVRAM
+###BIOS settings
+My current BIOS version is 1.6.0
+| ###Boot Options |
+| ------ |
+| UEFI Boot Path Security | Never |
+| ###System Configuration |
+| ------ |
+| Integrated NIC | Enabled |
+| SATA Operation | AHCI |
+| USB Configuration | Enable USB Boot Support should be checked |
+| ###Video |
+| ------ |
+| Disable EcoPower (Optional) |
+| ###Security |
+| ------ |
+| Absolute | Disable Absolute |
+| TPM 2.0 Security On | OFF |
+| Intel SGX | Disabled |
+| ###Secure Boot |
+| ------ |
+| Enable Secure Boot | OFF |
+| Secure Boot Mode | Deployed Mode |
+| ###Wireless |
+| ------ |
+| Disable WLAN and Bluetooth if you still haven't replaced the card to save some battery life |
+| Virtualization |
+| ------ |
+| Intel Virtualization Technology | ON |
+| VT for Direct I/O | OFF |
 
-Not working (this is only for now):
-- WiFi (to be replaced with DW1560 or DW1820A)
-- Sound (tried many things, even created a custom layout id and still not working)
-- Mic and camera (still haven't tried anything to fix it)
-- Bluetooth
-- HDMI (still haven't tried anything to fix it)
 
-As far as used the laptop I can tell it's a very good hackbook. It's fast and is working very stable with the last fixes.
-I am still working on this EFI so I will update it as soon as I have any progress on it.
+
+###Working
+```sh
+Booting/Shutdown/Restart
+Speed Step
+Native power management
+Graphics acceleration 
+Audio
+Audio fn keys (f1, f2, f3)
+All USB-A ports (mapped)
+LAN
+Battery reporting
+Keyboard
+Touchpad
+Brightness regulation
+Sleep/Wake/Instant On
+NVRAM
+```
+
+###Not working (to be fixed)
+```sh
+WiFi (to be replaced with DW1560 or DW1820A)
+Bluetooth
+Mic
+Camera
+HDMI
+Fn keys for brightness
+Fingerprint sensor (Goodix fingerprint sensor are not supported by macOS)
+```
