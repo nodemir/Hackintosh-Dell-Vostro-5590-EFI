@@ -4,7 +4,7 @@
 Tested on Dell Vostro 5590. It's recommended to update BIOS to the latest versions. I will update this repository regularly with new fixes and updated versions of OpenCore and kexts.
 
 <details>
-<summary>##Update log</summary>
+<summary>## Update log</summary>
 <br>
   - 13 Apr 2020 - fixed power management and trackpad
 <br>
