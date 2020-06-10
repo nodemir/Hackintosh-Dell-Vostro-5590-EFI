@@ -30,9 +30,9 @@ Goodix fingerprint sensor
 ```
 
 ### Important BIOS settings
-```sh
 My current BIOS version is 1.6.0
 I recommend you to restore the default BIOS settings before proceeding
+```sh
 UEFI Boot Path Security - Never
 Integrated NIC - Enabled
 SATA Operation - AHCI
