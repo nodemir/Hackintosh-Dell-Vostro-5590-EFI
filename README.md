@@ -80,9 +80,12 @@ To fix trackpad click working only on pressing, go to preferences -> trackpad ->
 Keep in mind that you will need to fix some things such as iServices manually.
 
 ### Benchmarks (Geekbench)
+
 CPU:
 https://browser.geekbench.com/v5/cpu/2474871
+
 Metal:
 https://browser.geekbench.com/v5/compute/1047157
+
 OpenCL:
 https://browser.geekbench.com/v5/compute/1047149
